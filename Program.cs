@@ -18,6 +18,20 @@ void Infinity (){
             Console.WriteLine("It's all");
             Console.WriteLine();
         }
+        int number;
+        if (int.TryParse(str, out number)){ // Проверка, является ли ввод числом
+        int sum=0;
+            while(number>1){
+                sum+=number%10;
+                number=number/10;
+            }
+            if (sum%2==0){
+
+            Console.WriteLine("It's all");
+            Console.WriteLine();
+            break;
+            }
+        }
     }
 }
 
